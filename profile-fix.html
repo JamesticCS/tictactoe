@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Image Fix</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+    }
+    img {
+      max-width: 80%;
+      max-height: 80vh;
+      border: 3px solid white;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <img src="profile.png" alt="Profile Image" />
+</body>
+</html>
