@@ -4,6 +4,7 @@ import GameBoard from './components/GameBoard';
 import GameHeader from './components/GameHeader';
 import GameControls from './components/GameControls';
 import GameProvider from './components/GameProvider';
+import AboutDialog from './components/AboutDialog';
 
 function App() {
   const [gameMode, setGameMode] = useState<'player' | 'ai'>('player');
@@ -11,6 +12,8 @@ function App() {
   return (
     <GameProvider>
       <div className="min-h-screen flex flex-col p-4 sm:p-6 items-center justify-center">
+        <AboutDialog />
+        
         <motion.main 
           className="max-w-md w-full game-container my-8"
           initial={{ opacity: 0, y: 20 }}
